@@ -4,6 +4,8 @@ $('.header__btn').on('click', function() {
  $('.header__btn').toggleClass('header__btn_active');
 });
 
+
+//Tabs products section
 function openTab(event, tabId) {
  // Получить все элементы с классом "tab-pane" и скрыть их
  var tabContent = document.getElementsByClassName("content-tabs");
@@ -23,4 +25,17 @@ function openTab(event, tabId) {
 }
 
 // По умолчанию открыть первый таб при загрузке страницы
-document.getElementById("tab1").style.display = "block";
+document.getElementById("tab-1").style.display = "block";
+
+
+//Swiper examples section
+new Swiper ('.examples__slider', {
+ slidesPerView: 1,
+ autoHeight: true,
+ spaceBetween: 0,
+
+ pagination: {
+  el: '.pagination',
+  clickable: true,
+ },			
+});
