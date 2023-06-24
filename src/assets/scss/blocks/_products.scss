@@ -1,67 +1,116 @@
 .products {
- // .products__breadcrumbs
- &__breadcrumbs {
- }
- // .products__content
- &__content {
- }
- // .products__title
- &__title {
- }
- // .products__tabs
- &__tabs {
+ @include background(url("../images/backgrounds/products.jpg"));
+ background-position: center;
+ color: $mainColor;
+ text-align: center;
+ padding: 100px 0;
+ // .products__info 
+ &__info {
+  font-weight: 200;
+  display: block;
+  margin-bottom: 80px;
  }
  // .products__btn
  &__btn {
+  padding: 20px 30px; 
  }
 }
-.container {
-}
-.breadcrumbs {
- // .breadcrumbs__item
- &__item {
- }
-}
+//=====================================================
 .tabs {
+ display: flex;
+ justify-content: center;
+ gap: 24px;
+ margin-bottom: 70px;
  // .tabs__btn
  &__btn {
- }
- // .tabs__content
- &__content {
+  font-weight: 700;
+  color: $secondaryColor;
+  background-color: $mainColor;
+  border-radius: 3px;
+  max-width: 235px;
+  width: 100%;
+  padding: 19px;
+  &.active {
+   background-color: $accentColor;
+  }
  }
 }
+//=====================================================
 .content-tabs {
  display: none;
+ margin-bottom: 70px;
  &.active {   
   display: block;
 }
+ // .content-tabs__box 
+ &__box {
+  display: flex;
+  justify-content: center;
+  gap: 33px;
+ }
  // .content-tabs__item
  &__item {
+  max-width: 428px;
+  width: 100%;
+  padding: 22px;
+  background-color: $mainColor;
+  color: $secondaryColor;
  }
  // .content-tabs__image
  &__image {
+  margin-bottom: 20px;
+  width: 100%;
+  img {
+    width: 100%;
+  }
  }
  // .content-tabs__options
  &__options {
+  display: flex;
+  margin-bottom: 20px;
+  color: #91959C;
  }
  // .content-tabs__list
  &__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  &:not(:first-child) {
+   margin-left: auto;
+  }
  }
  // .content-tabs__list-name
  &__list-name {
+  text-align: left;
  }
  // .content-tabs__list-value
  &__list-value {
+  text-align: right;
  }
  // .content-tabs__bottom
  &__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
  }
  // .content-tabs__price
  &__price {
+  text-align: left;
+  span {
+   color: #91959C;
+   display: block;
+   &:nth-child(2) {
+    font-weight: 800;
+    font-size: 36px;
+    color: $secondaryColor;
+   }
+  }
  }
  // .content-tabs__link
  &__link {
+  background-color: #E2E8ED;
+  border-radius: 3px;
+  padding: 14px 30px;
+  cursor: pointer;
  }
-}
-.btn {
 }
