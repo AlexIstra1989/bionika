@@ -1,0 +1,101 @@
+.about {
+ @include background(url("../images/backgrounds/about.jpg"));
+ background-position: center;
+ color: $mainColor;
+ padding: 100px 0;
+ // .about__breadcrumbs
+ &__breadcrumbs {
+ }
+ // .about__content
+ &__content {
+  p {
+   font-weight: 200;
+   span {
+    font-weight: 800;
+   }
+  }
+ }
+ // .about__title
+ &__title {
+ }
+ // .about__items
+ &__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,(minmax(370px, 1fr)));
+  row-gap: 45px;
+  column-gap: 90px;
+  margin: 65px 0;
+ }
+ //.about__box 
+ &__box {
+  padding-left: 100px;
+ }
+ // .about__item
+ &__item {
+  position: relative;
+  &::before {
+   @include pseudo;
+   left: 0;
+   top: 0;
+   width: 65px;
+   height: 65px;
+  }
+  &_first::before {
+   @include background(url("../images/about/item-1.svg"));
+   width: 62px;
+   height: 63px;
+  }
+  &_second::before {
+   @include background(url("../images/about/item-2.svg"));
+  }
+  &_third::before {
+   @include background(url("../images/about/item-3.svg"));
+  }
+  &_fourth::before {
+   @include background(url("../images/about/item-4.svg"));
+   width: 57px;
+   height: 63px;
+  }
+  &_fifth::before {
+   @include background(url("../images/about/item-5.svg"));
+  }
+  &_sixth::before {
+   @include background(url("../images/about/item-6.svg"));
+  }
+ }
+ // .about__name
+ &__name {
+ }
+}
+//================================================
+.consult {
+ p {
+  font-size: 24px;
+  &:nth-child(2) {
+   font-size: 18px;
+   margin-bottom: 35px;
+  }
+ }
+ // .consult__form
+ &__form {
+  display: flex;
+  gap: 17px;
+ }
+ // .consult__field
+ &__field {
+  max-width: 246px;
+  width: 100%;
+  border-radius: 3px;
+  padding: 19px 25px;
+  &::placeholder {
+   font-size: 16px;
+   color: #7D838A;
+  }
+ }
+ // .consult__btn
+ &__btn {
+  padding: 20px 30px;
+ }
+}
+.btn {
+}
