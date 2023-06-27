@@ -65,6 +65,8 @@
  }
  // .about__name
  &__name {
+  font-weight: 800;
+  margin-bottom: 5px;
  }
 }
 //================================================
@@ -92,10 +94,47 @@
    color: #7D838A;
   }
  }
+ // &__sel {
+ //  max-width: 246px;
+ //  width: 100%;
+ //  border-radius: 3px;
+ //  padding: 19px 25px;
+ // }
  // .consult__btn
  &__btn {
   padding: 20px 30px;
  }
 }
-.btn {
+
+.select2-container {
+ max-width: 246px !important;
+ width: 100% !important;
+ background-color: $mainColor;
+}
+
+.select2-search__field {
+ display: none;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+ display: block;
+ padding: 15px 25px;
+ background-color: #fff;
+}
+
+.select2-container--default .select2-selection--single {
+ border: none; 
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+ top: 50%;
+ transform: translateY(-50%);
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+ border-color: #EC7723 transparent transparent transparent;
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+ border-color: transparent transparent #EC7723 transparent;
 }

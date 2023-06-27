@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
     <title>bionika</title>
 </head>
@@ -350,6 +351,18 @@
        <form class="consult__form" action="#">
         <input class="consult__field" type="text" placeholder="Имя" required>
         <input class="consult__field" type="text" placeholder="+7 (___) ___ - __ - __" required>
+        <!-- <select class="consult__sel">
+         <option value="1" selected>Тема консультации</option>
+         <option value="2">Пункт №2</option>
+         <option value="3">Пункт №3</option>
+         <option value="4">Пункт №4</option>
+        </select> -->
+        <select id="mySelect">
+         <option value="option1">Тема консультации</option>
+         <option value="option2">Доставка</option>
+         <option value="option3">Цены</option>
+       </select>
+
         <button class="consult__btn btn" type="submit">Получить бесплатную консультацию</button>
        </form>
       </div>
@@ -403,7 +416,8 @@
    </section>
   </main>
  </div>  
- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
  <script src="assets/js/script.js"></script>
 </body>

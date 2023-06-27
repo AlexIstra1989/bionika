@@ -39,3 +39,10 @@ new Swiper ('.examples__slider', {
   clickable: true,
  },			
 });
+
+$(document).ready(function() {
+ $('#mySelect').select2({
+
+ });
+});
+
